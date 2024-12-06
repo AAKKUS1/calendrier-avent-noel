@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Chango&family=Doppio+One&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+}
+p {
+	font-family: Chango;
+	font-size: 52px;
+	line-height: 87.19px;
+	font-family: 400;
+}
+#blue {
+	background-color: #baece7;
+	color: #214441;
+}
+#red {
+	background-color: #f26046;
+	color: white;
+}
+#purple {
+	background-color: #e5d3e4;
+	color: #4d254a;
+}
+
+.box {
+	border-radius: 12px;
+	border: none;
+	border: solid medium transparent;
+	background-color: #ffc776;
+	color: #402909;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transition-property: transform, color, background-color;
+	transition-duration: 1.5s;
+}
+.box:hover {
+	transform: rotateY(3.142rad) scale(120%);
+}
+#purple:hover{
+    background-color:#4d254a ;
+	color:#e5d3e4 ;
+}
+#blue:hover{
+    background-color: #214441;
+    color: #baece7;
+}
+#red:hover{
+    background-color: white;
+    color: #f26046;
+    border: solid thin #f26046;
+}
+#yellow:hover{
+    background-color: #402909;
+    color: #ffc776;
+}
+img {
+	display: none;
+}
+main {
+	border: solid 10px #4d682a;
+	background-color: #4d682a;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+@media screen and (min-width: 321px) {
+	main {
+		border-radius: 12px;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 85%;
+	}
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	p {
+		font-size: 52px;
+	}
+	img {
+		display: block;
+	}
+	.box {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	main {
+		border-radius: 12px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		width: 85%;
+	}
+	p {
+		font-size: 72px;
+	}
+}
